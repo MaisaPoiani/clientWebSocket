@@ -57,7 +57,8 @@ export default class App extends Component {
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', paddingBottom: 50 }} id="messages">
             {this.state.messages.map(message => 
-              <Card key={message.msg} style={{ width: 300, margin: '16px 4px 0 4px', alignSelf: this.state.userName === message.user ? 'flex-end' : 'flex-start' }} loading={false}>
+              <Card key={message.msg} style={{ width: 300, margin: '16px 4px 0 4px', 
+              alignSelf: this.state.userName === message.user ? 'flex-end' : 'flex-start' }} loading={false}>
                 <Meta
                   avatar={
                     <Avatar style={{ color: '#f56a00', backgroundColor: '#fde3cf' }}>{message.user[0].toUpperCase()}</Avatar>

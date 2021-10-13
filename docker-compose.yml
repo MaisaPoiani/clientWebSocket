@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  node:
+    image: node:13.14.0
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./:/srv/webSockerClient
+    working_dir: /srv/webSockerClient
+    command: 'npm start'
